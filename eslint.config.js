@@ -5,7 +5,7 @@ import eslint from "@eslint/js";
 
 export default tseslint.config(
 	eslint.configs.recommended,
-	tseslint.configs.recommendedTypeChecked,
+	tseslint.configs.recommended,
 	tseslint.configs.strict,
 	tseslint.configs.stylistic,
 	{
@@ -44,16 +44,7 @@ export default tseslint.config(
 			"@typescript-eslint/no-mixed-enums": "warn",
 			"@typescript-eslint/no-unnecessary-condition": "warn",
 			"@typescript-eslint/prefer-enum-initializers": "warn",
-			"@typescript-eslint/no-non-null-assertion": "off",
-			"@typescript-eslint/naming-convention": [
-				"error",
-				{
-					selector: "variable",
-					types: ["boolean"],
-					format: ["PascalCase"],
-					prefix: ["is", "should", "has", "can", "did", "will"]
-				}
-			]
+			"@typescript-eslint/no-non-null-assertion": "off"
 		}
 	}
 );

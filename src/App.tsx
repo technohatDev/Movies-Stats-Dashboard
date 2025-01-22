@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 
+import { MainLayout } from "@/layouts";
 import { Home } from "@/pages/Home";
 
 const App = () => {
@@ -9,8 +10,12 @@ const App = () => {
 				<Routes>
 					<Route
 						path="/"
-						element={<Home />}
-					/>
+						element={<MainLayout />}>
+						<Route
+							index
+							element={<Home />}
+						/>
+					</Route>
 				</Routes>
 			</BrowserRouter>
 		</div>

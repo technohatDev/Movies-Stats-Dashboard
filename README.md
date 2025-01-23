@@ -1,4 +1,4 @@
-# Movies List - Technical Assignment For Vision Dimension Company
+# Movies List - Technical Assignment For Glance Care Company
 
 This project is a technical assignment for Glance Care Company. The project is a simple web application that displays a list of movies. The user can search for a movie by its title, and the application will display the list of movies that match the search query. The user can filter the movies by their ratings
 

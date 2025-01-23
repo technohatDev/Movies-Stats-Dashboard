@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Movies List - Technical Assignment For Vision Dimension Company
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a technical assignment for Glance Care Company. The project is a simple web application that displays a list of movies. The user can search for a movie by its title, and the application will display the list of movies that match the search query. The user can filter the movies by their ratings
 
-Currently, two official plugins are available:
+This is a [React.js](https://react.dev/) project bootstrapped with [`yarn create vite`](https://vite.dev/guide/) and uses `yarn` as the package manager.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
 
-## Expanding the ESLint configuration
+![Movies List](./docs/images/screenshot.jpeg)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## API Used
 
-- Configure the top-level `parserOptions` property like this:
+The project uses the [freetestapi.com/apis/movies](https://www.freetestapi.com/apis/movies) free api to fetch the list of movies.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Technologies Used
+
+- React (Vite)
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- Tanstack/react-query
+- Axios
+
+## Getting Started
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/technohatDev/Movies-Stats-Dashboard.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Then, navigate to the project directory.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Next, install the dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn install
 ```
+
+Then, run the development server:
+
+```bash
+yarn dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
